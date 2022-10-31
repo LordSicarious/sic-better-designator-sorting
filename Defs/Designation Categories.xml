@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!--==========CATEGORIES==========-->
+  <DesignationCategoryDef>
+    <defName>Science</defName>
+    <label>science</label>
+    <order>490</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+  </DesignationCategoryDef>
+  <DesignationCategoryDef>
+    <defName>Rest</defName>
+    <label>rest</label>
+    <order>485</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+  </DesignationCategoryDef>
+  <DesignationCategoryDef>
+    <defName>Technology</defName>
+    <label>technology</label>
+    <order>480</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+  </DesignationCategoryDef>
+  <DesignationCategoryDef>
+    <defName>Food</defName>
+    <label>food</label>
+    <order>600</order>
+    <specialDesignatorClasses>
+      <li>Designator_Cancel</li>
+      <li>Designator_Deconstruct</li>
+    </specialDesignatorClasses>
+  </DesignationCategoryDef>
+  <!--==========DROPDOWN GROUPS==========-->
+  <DesignatorDropdownGroupDef>
+    <defName>IED_Trap</defName>
+    <label>IED trap</label>
+  </DesignatorDropdownGroupDef>
+</Defs>

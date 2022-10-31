@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>[SIC] Better Designator Sorting</name>
+	<author>Sicarious</author>
+	<supportedVersions>
+		<li>1.4</li>
+	</supportedVersions>
+	<packageId>SIC.Designator.Sorting</packageId>
+	<description>Divides up some overcrowded designator categories in the Architect menu, shifts some items around, and improves ordering across the board. Major changes include:
+- Rest category, containing all beds and their related facilities, including Deathrest Caskets, as well as Cryptosleep Caskets.
+- Science category, containing Research benches and their facilities, mineral scanners, Biotech genetics buildings, and various science-y buildings.
+- Technology category, containing miscellaneous high tech devices like the Comms Console, Ship or Orbitral Trade Beacons, Biosculpter Pods, and Mechanitor infrastructure.
+- The Ideology and Biotech tabs are removed, with their contents spread out across many other tabs.
+    </description>
+    <loadAfter>
+		<li>Ludeon.RimWorld.Core</li>
+		<li>Ludeon.RimWorld.Royalty</li>
+		<li>Ludeon.RimWorld.Ideology</li>
+		<li>Ludeon.RimWorld.Biotech</li>
+		<li>Meltup.PolyamoryBeds.Vanilla</li>
+    </loadAfter>
+</ModMetaData>

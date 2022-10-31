@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--========== INHERITANCE TRACING ==========-->
+<!-- MayRequire only works on patches inside a sequence -->
+<Patch>
+  <Operation Class="PatchOperationSequence">
+    <operations>
+      <li Class="PatchOperationAddModExtension" MayRequire="Ludeon.RimWorld.Royalty">
+        <xpath>/Defs/ThingDef [@Name="Brazier"]</xpath>
+        <value>
+          <li Class="BetterDesignatorSorting.BDS_DefModExtension">
+            <buildingBase>brazier</buildingBase>
+          </li>
+        </value>
+      </li>
+      <li Class="PatchOperationAddModExtension" MayRequire="Ludeon.RimWorld.Biotech">
+        <xpath>/Defs/ThingDef [@Name="SubcoreScannerBase"]</xpath>
+        <value>
+          <li Class="BetterDesignatorSorting.BDS_DefModExtension">
+            <buildingBase>subcore scanner</buildingBase>
+          </li>
+        </value>
+      </li>
+      <li Class="PatchOperationAddModExtension" MayRequire="Ludeon.RimWorld.Ideology">
+        <xpath>/Defs/ThingDef [@Name="IdeoBuildingBase"]</xpath>
+        <value>
+          <li Class="BetterDesignatorSorting.BDS_DefModExtension">
+            <buildingBase>ideo building</buildingBase>
+          </li>
+        </value>
+      </li>
+      <li Class="PatchOperationAddModExtension" MayRequire="Ludeon.RimWorld.Ideology">
+        <xpath>/Defs/ThingDef [@Name="IdeoBuildingConsumableBase"]</xpath>
+        <value>
+          <li Class="BetterDesignatorSorting.BDS_DefModExtension">
+            <buildingBase>ideo consumable</buildingBase>
+          </li>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+</Patch>

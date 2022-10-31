@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--========== INHERITANCE TRACING ==========-->
+<!-- Adds extra tags to various buildings in order to allow tracing of derived buildings -->
+<Patch>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>/Defs/ThingDef [@Name="BenchBase"]</xpath>
+    <value>
+      <li Class="BetterDesignatorSorting.BDS_DefModExtension">
+        <buildingBase>workbench</buildingBase>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>/Defs/ThingDef [@Name="FurnitureBase"]</xpath>
+    <value>
+      <li Class="BetterDesignatorSorting.BDS_DefModExtension">
+        <buildingBase>furniture</buildingBase>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>/Defs/ThingDef [@Name="ShelfBase"]</xpath>
+    <value>
+      <li Class="BetterDesignatorSorting.BDS_DefModExtension">
+        <buildingBase>shelf</buildingBase>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>/Defs/ThingDef [@Name="SteleBase"]</xpath>
+    <value>
+      <li Class="BetterDesignatorSorting.BDS_DefModExtension">
+        <buildingBase>stele</buildingBase>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>/Defs/ThingDef [@Name="TorchLamp"]</xpath>
+    <value>
+      <li Class="BetterDesignatorSorting.BDS_DefModExtension">
+        <buildingBase>torch</buildingBase>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>/Defs/ThingDef [@Name="LampBase"]</xpath>
+    <value>
+      <li Class="BetterDesignatorSorting.BDS_DefModExtension">
+        <buildingBase>lamp</buildingBase>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>/Defs/ThingDef [@Name="TrapIEDBase"]</xpath>
+    <value>
+      <li Class="BetterDesignatorSorting.BDS_DefModExtension">
+        <buildingBase>IED trap</buildingBase>
+      </li>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAddModExtension">
+    <xpath>/Defs/ThingDef [@Name="BaseArtilleryBuilding"]</xpath>
+    <value>
+      <li Class="BetterDesignatorSorting.BDS_DefModExtension">
+        <buildingBase>artillery</buildingBase>
+      </li>
+    </value>
+  </Operation>
+</Patch>

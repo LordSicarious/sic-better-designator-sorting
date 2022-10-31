@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Changes all bedding to use the "Rest" designation category instead of Furniture -->
+<Patch>
+  <!--==========REMOVE TABS==========-->
+  <!-- Change anything using it to Misc -->
+  <Operation Class="PatchOperationReplace">
+    <success>Always</success>
+    <xpath>/Defs//designationCategory[text()="Ideology" or text()="Biotech"]/text()</xpath>
+    <value>Misc</value>
+  </Operation>
+  <Operation Class="PatchOperationRemove">
+    <success>Always</success>
+    <xpath>/Defs/DesignationCategoryDef [defName="Ideology" or defName="Biotech"]</xpath>
+  </Operation>
+  <!--==========ADDITIONAL SPECIAL DESIGNATORS==========-->
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/DesignationCategoryDef [defName="Structure"]/specialDesignatorClasses</xpath>
+    <value>
+      <li>Designator_SmoothSurface</li>
+    </value>
+  </Operation>
+</Patch>
